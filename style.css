@@ -1,0 +1,115 @@
+/* Применяется ко всем элементам */
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: normal;
+}
+/* Ширина контейнера */
+.container{ 
+    max-width: 1070px;
+    margin: 0 auto;
+}
+/* Цвет заголовка */
+.header, .footer{
+    background: rgba(255, 113, 67, 0.27);
+    padding: 38px 0 48px;
+}
+
+.header_flex, .footer_flex, .about{
+    display: flex; /*Элементы (логотип, nav и кнопка стали в ряд*/
+    justify-content: space-between; /*Одинаковые отступы между элементами по горизонтали*/
+    align-items: center; /*Выравнивание по вертикали*/
+
+}
+
+/* Меню станет в ряд */
+.nav_li{
+    display: inline-block;
+    
+}
+/* Исключение, т.е. все nav_li кроме первого */
+.nav_li:not(:first-of-type){
+    margin-left: 49px;
+}
+/* Цвет навигации серый, нет подчёркиванию */
+.nav_link{
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: -0.47px;
+    color:#696871;
+    text-decoration: none; /*нет подчёркиванию*/
+}
+/* Изменения при наведении на элемент */
+.nav_link:hover{
+    color: black;
+    transition: 300ms; /*Плавность изменений*/
+}
+
+.button{
+    width: 212px;
+    height: 60px;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: -0.53px;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;     /*при наведении рука*/  
+}
+
+.button_orange{
+     background: #FF7143;
+     
+}
+/* При наведении меняется цвет кнопки */
+.button_orange:hover{
+    background: #f32307;
+    transition: 500ms; /*Плавность зменений*/
+}
+
+.about{
+    margin: 104px auto 85px; /*Отступы слева и справа выч.автоматически*/
+}
+
+.about_title{
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 77px;
+    letter-spacing: -2.5px;
+    color: #19191B;
+    max-width: 467px; /*Ширина блока с текстом*/
+    margin-bottom: 30px; /*Отступ вниз*/
+}
+
+.about_text{
+    Font-size: 20px;
+    line-height: 30px;
+    line-height: 120%;
+    align: Left;
+    Vertical-align: Top;
+    Letter-spacing: -0.63px;
+    color: #696871;
+    max-width: 410px; /*Ширина блока с текстом*/
+    margin-bottom: 50px; /*Отступ вниз*/
+}
+
+.button_violet{
+    background: #5454D4;
+}
+
+.button_transparent{
+    background: none;
+    color: #5454D4;
+    border: 1px solid #5454D4; /*Толщина и цвет обводки*/
+    margin-left: 35px;
+}
+
+.footer{
+    background: rgba(255, 113, 67, 0.27);
+    padding: 53px 0;
+}
+
