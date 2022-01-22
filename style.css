@@ -16,7 +16,7 @@
     padding: 38px 0 48px;
 }
 
-.header_flex, .footer_flex, .about{
+.header_flex, .footer_flex, .about, .subscription, .plan_flex{
     display: flex; /*Элементы (логотип, nav и кнопка стали в ряд*/
     justify-content: space-between; /*Одинаковые отступы между элементами по горизонтали*/
     align-items: center; /*Выравнивание по вертикали*/
@@ -113,3 +113,125 @@
     padding: 53px 0;
 }
 
+.subscription{
+    margin-bottom: 85px;
+}
+
+.subscription_title{
+    font-weight: Bold;
+    Font-size: 50px;
+    line-height: 57px;
+    line-height: 88%;
+    Align: Left;
+    vertical-align: Top;
+    letter-spacing: -1.56px;
+    Fill: Solid #19191B;
+    margin-bottom: 38px;
+}
+
+input{
+    width: 302px;
+    height: 60px;
+    border-radius: 10px;
+    border: 1px solid #7087FF;
+    padding-left: 14px;
+    box-sizing: border-box; /*Вернуть размер поля*/
+    margin-right: 39px;
+}
+
+input::placeholder, input{  /*placeholder - то что внутри поля ввода*/
+    font-weight: Bold;
+    font-size: 17px;
+    line-height: 22px;
+    line-height: 100%;
+    Align: Left;
+    vertical-align: Top;
+    letter-spacing: -0.53px;
+    color:  #000000;   
+}
+
+input:focus{ 
+    outline: none; /*Обрамление поля не меняется*/
+}
+
+.plan{
+    margin-bottom: 132px;
+}
+
+.plan_title{
+    font-weight: Bold;
+    font-size: 60px;
+    line-height: 70px;
+    line-height: 90%;
+    Align: Left;
+    vertical-align: Top;
+    letter-spacing: -1.88px;
+    color: #19191B;
+    max-width: 504px;
+    height: 128px;
+    margin-bottom: 110px;
+}
+
+.item{
+    width: 330px;
+    background: #F8F8F8;
+    border-radius: 10px;
+    text-align: center; /*Текст в диве стал по центру*/
+    padding: 34px 0 27px;
+}
+
+.item:hover{  /*hover - при наведении курсором мыши*/
+    transition: 500ms;
+    background: #FF7143;
+    box-shadow: 0 32px 34px rgba(255, 112, 59, 0.3178) ;
+}
+
+.item_text{
+    font-weight: Regular;
+    font-size: 18px;
+    line-height: 28px;
+    Line-height: 119%;
+    vertical-align: Top;
+    letter-spacing: -0.56px;
+    color:#696871;
+}
+
+.item:hover .item_text, .item:hover .item_title, .item:hover .item_li{  /*hover - при наведении*/
+    color: white;
+    transition: 500ms;
+}
+
+.item_title{
+    font-weight: Bold;
+    font-size: 60px;
+    line-height: 56px;
+    line-height: 72%;
+    letter-spacing: -1.03px;
+    color: #1D293F;
+    margin: 22px 0 28px;
+}
+
+.item_title span{
+    font-size: 28px;
+}
+
+.item_li{
+    list-style: none; /*Убрать точки в списке*/
+    font-size: 17px;
+    line-height: 50px;
+    letter-spacing: -0.53px;
+    color:#696871;
+}
+
+.button_item{
+    width: 285px;
+    background: white;
+    color: #5454D4;
+    margin-top: 36px;
+}
+
+.item:hover .button_item{  /*hover - при наведении*/
+    background: #9F3919;
+    color: white;
+    transition: 500ms;
+}
